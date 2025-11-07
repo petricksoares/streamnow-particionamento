@@ -13,7 +13,7 @@ O projeto mostra:
 - Como definir e organizar partições por **mês (range)** e **país (list)**.  
 - Como inserir e consultar dados distribuídos automaticamente entre as partições.
 
-## 🧩 Estrutura do Projeto
+## Estrutura do Projeto
 
 ### 1. Tabela `reproducoes` (Particionamento por RANGE)
 A tabela `reproducoes` foi particionada com base na coluna `data_reproducao`, criando **12 partições mensais para o ano de 2025**.  
@@ -41,18 +41,9 @@ Cada partição contém usuários daquele país, com informações de:
 
 ---
 
-## 🧠 Consultas Demonstrativas
-
-### 🔹 Exemplo – Verificando qual partição recebeu cada registro:
-select tableoid::regclass as particao, *
-from usuarios;
-
-## 💻 Tecnologia Utilizada
-* PostgreSQL (versão 13 ou superior recomendada)
-* SQL como linguagem de definição e manipulação de dados
-* Ambiente de testes compatível com o PostgreSQL, como pgAdmin, DBeaver ou psql CLI
-
-## 👨‍💻 Criador
-Autor: Petrick Gomes
+### 💻 Tecnologia Utilizada
+``` * PostgreSQL (versão 13 ou superior recomendada)
+ - SQL como linguagem de definição e manipulação de dados
+ - Ambiente de testes compatível com o PostgreSQL, como pgAdmin, DBeaver ou psql CLI
 
 📫 Contato: petrickgomes.the@gmail.com
