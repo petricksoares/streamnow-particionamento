@@ -80,6 +80,7 @@ values
 ('2025-12-15', 240, 'ação'),
 ('2025-12-28', 300, 'ficção científica');
 
--- Exibindo usuário de cada país
+-- Exibindo reprodução de cada mês
  SELECT tableoid::regclass AS particao,*
+
  FROM reproducoes;
